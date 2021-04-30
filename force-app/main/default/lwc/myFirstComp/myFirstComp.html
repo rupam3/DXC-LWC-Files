@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="My First Component" icon-name="action:new_event">
+        <lightning-button label="Save" variant="brand" slot="actions" onclick={handleClick}> </lightning-button>
+         <lightning-button label="Cancel" variant="destructive" slot="footer" onclick={handleCancel}> </lightning-button>
+        <div class="myOwnCard">
+            
+            <p class="slds-p-around_large"><b>Hello!!</b> {name}</p>
+            <lightning-input class="slds-p-top_large" label="Name" value={name} onchange={handleChange}></lightning-input>
+
+
+            <template if:true={isVisible}>
+                <div class="slds-m-top_medium slds-p-left_large forPara"> 
+                    <p>Button is Clicked</p>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>
