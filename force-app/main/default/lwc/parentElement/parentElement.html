@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Child To Parent" icon-name="custom:custom33">
+        <p>You are viewing Parent Component</p>
+        <div>
+            {parentValue}
+        </div>
+        <div class="slds-m-around_large slds-box">
+        <c-child-element onevt={eventHandler}></c-child-element>
+        </div>
+    </lightning-card>
+</template>

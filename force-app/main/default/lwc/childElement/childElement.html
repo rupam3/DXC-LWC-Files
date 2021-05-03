@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <lightning-button name="Click Me" label="Click Me" onclick={handleClick}></lightning-button>
+        <div class="slds-p-around_medium slds-box" style="background-color: lightgrey">
+            <p>You are viewing CHILD component</p>
+            <lightning-input label="Enter something to show in Parent" value={childValue} onchange={myFunc}></lightning-input>
+        </div>
+    </lightning-card>
+</template>
