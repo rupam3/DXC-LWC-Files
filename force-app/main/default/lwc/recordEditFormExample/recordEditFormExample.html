@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Lightning Record View Dynamic Form" icon-name="custom:custom23">
+        <div class="slds-p-around_large">
+            <lightning-record-view-form object-api-name={objectApiName} record-id={recordId}>
+                <div class="slds-box slds-m-around_medium" style="background-color: lightgrey;">
+                    <lightning-output-field field-name="Name"></lightning-output-field>
+                    <lightning-output-field field-name="AccountId"></lightning-output-field>
+                </div>
+                <lightning-output-field field-name="Phone"></lightning-output-field>
+                <lightning-output-field field-name="Title"></lightning-output-field>
+                <lightning-output-field field-name="Email"></lightning-output-field>
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</template>
