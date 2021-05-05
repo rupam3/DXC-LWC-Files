@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Contact List from Apex using Property" icon-name="standard:contact">
+        <div class="slds-m-around_large">
+            <lightning-input label="Search" onchange={handleChange} class="slds-m_around_medium"></lightning-input>
+            <template if:true={contacts.data}>
+                <template for:each={contacts.data} for:item="con">
+                    <p key={con.Id}>
+                        {con.Name}
+                    </p>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>
